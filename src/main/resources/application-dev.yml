@@ -1,0 +1,13 @@
+server:
+  port: 60017
+  servlet:
+    context-path: /shuhistorytest
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.132.110.63:3307/todolist?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 12345678
+    type: com.alibaba.druid.pool.DruidDataSource
+
