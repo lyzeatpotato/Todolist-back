@@ -4,6 +4,11 @@ spring:
   jackson:
     date-format: yyyy-MM-dd
     time-zone: GMT+8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
 
 mybatis:
   configuration:
@@ -25,3 +30,14 @@ knife4j:
     password: shu100
   setting:
     enableDynamicParameter: true
+
+
+# OSS相关配置信息
+aliyun:
+  oss:
+    endpoint: oss-cn-shanghai.aliyuncs.com # oss对外服务的访问域名
+    accessKeyId: LTAI5tEuURBDSoYv1Ew1vpTb # 访问身份验证中用到用户标识
+    accessKeySecret: j83ESTEIjIXcRx5CniEhi8sU8aVO7S # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
+    bucketName: todolist0522 # oss的存储空间
+    dir:
+      prefix: todolist2023/ # 上传文件夹路径前缀
